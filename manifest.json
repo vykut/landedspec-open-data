@@ -7,6 +7,16 @@
   "published_on": "2026-07-19",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "license_boundary": "The CC BY 4.0 grant covers LandedSpec-authored selection, calculations, labels, and explanatory notes. Underlying source data remains subject to the source provider's rights and terms.",
+  "data_package": {
+    "path": "datapackage.json",
+    "standard": "Data Package Standard v2",
+    "profile": "https://datapackage.org/profiles/2.0/datapackage.json",
+    "resources": 3,
+    "records": 175,
+    "fields": 43,
+    "bytes": 13725,
+    "sha256": "f806ce151b4d77f435be6ae9ea062e46278661280e492d11269900c2909145b3"
+  },
   "datasets": [
     {
       "path": "datasets/aluminium-profile-tooling-finish-acceptance-register.csv",

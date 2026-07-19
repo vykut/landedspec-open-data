@@ -14,6 +14,12 @@ This repository is an owned distribution of selected datasets already published 
 
 `manifest.json` records each file's SHA-256 digest, byte size, row count, direct LandedSpec distribution, and HTML canonical.
 
+### Machine-readable Data Package
+
+[`datapackage.json`](datapackage.json) describes the collection using the current [Data Package Standard v2](https://datapackage.org/standard/data-package/). It identifies all three immutable CSV release assets as tabular resources and publishes their byte sizes, SHA-256 digests, 175 total records, 43 ordered field definitions, missing-value treatment, and primary keys. This gives data tools a deterministic way to validate and load the registers without replacing the explanatory LandedSpec landing pages.
+
+The descriptor improves machine-readable findability and interoperability. It does not represent acceptance by a data catalog, a DOI, an independent citation, or a Google ranking result.
+
 ## Use and limits
 
 - Treat blank, `buyer_to_confirm`, and unresolved fields as unresolved—not as zero or approval.

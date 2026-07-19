@@ -1,0 +1,366 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+  "name": "landedspec-construction-import-decision-registers",
+  "id": "https://github.com/vykut/landedspec-open-data/releases/tag/v2026.07.19",
+  "title": "LandedSpec Construction-Import Decision Registers",
+  "description": "Three reusable buyer-side construction-import registers for aluminium-profile pretreatment and finish acceptance, supplier document requirements, and FOB/CIF/DAP quote comparison. Blank and unresolved fields are intentional working inputs, not zero values or professional approval.\n\nThe package does not recommend suppliers or origins, assign customs codes or duties, quote freight rates, approve shipments, or replace responsible professional review.",
+  "homepage": "https://landedspec.com/methodology/#research-assets",
+  "version": "2026.7.19",
+  "created": "2026-07-19T10:03:08Z",
+  "keywords": [
+    "construction imports",
+    "construction procurement",
+    "aluminium profile pretreatment",
+    "powder coated aluminium profiles",
+    "supplier document requirements list",
+    "FOB CIF DAP",
+    "Incoterms",
+    "landed cost",
+    "Europe"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Victor Socaciu",
+      "givenName": "Victor",
+      "familyName": "Socaciu",
+      "path": "https://landedspec.com/about/",
+      "roles": [
+        "creator",
+        "dataCurator",
+        "rightsHolder"
+      ],
+      "organization": "LandedSpec"
+    }
+  ],
+  "sources": [
+    {
+      "title": "LandedSpec research assets catalog and source boundaries",
+      "path": "https://landedspec.com/methodology/#research-assets",
+      "version": "2026-07-19"
+    },
+    {
+      "title": "Immutable LandedSpec open-data release",
+      "path": "https://github.com/vykut/landedspec-open-data/releases/tag/v2026.07.19",
+      "version": "v2026.07.19"
+    }
+  ],
+  "resources": [
+    {
+      "name": "aluminium-profile-tooling-finish-acceptance-register",
+      "type": "table",
+      "path": "https://github.com/vykut/landedspec-open-data/releases/download/v2026.07.19/aluminium-profile-tooling-finish-acceptance-register.csv",
+      "title": "Aluminium Profile Tooling and Finish Acceptance Register",
+      "description": "A 108-row control register joining the controlled profile, tool or die, actual extrusion and finishing plants, pretreatment or coating system, production batch, packing revision, and repeat-order release evidence.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "bytes": 22893,
+      "hash": "sha256:bd020585ed76b35a5de7c1444c59188cf561958566f1cb0e61eb9376d86731df",
+      "records": 108,
+      "sources": [
+        {
+          "title": "China aluminium profile pretreatment for Germany — authoritative landing page",
+          "path": "https://landedspec.com/import/powder-coated-aluminium-profiles-to-germany/",
+          "version": "2026-07-19"
+        }
+      ],
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "section",
+          "decision_field"
+        ],
+        "fields": [
+          {
+            "name": "section",
+            "type": "string",
+            "description": "Control-workstream grouping for the decision field."
+          },
+          {
+            "name": "decision_field",
+            "type": "string",
+            "description": "Specific buyer or supplier decision that must be resolved."
+          },
+          {
+            "name": "unit_or_format",
+            "type": "string",
+            "description": "Required unit, identifier pattern, or evidence format."
+          },
+          {
+            "name": "mandatory",
+            "type": "string",
+            "description": "Whether the field is mandatory or conditional for the stated use."
+          },
+          {
+            "name": "buyer_requirement",
+            "type": "string",
+            "description": "Buyer-side requirement or acceptance question."
+          },
+          {
+            "name": "supplier_response",
+            "type": "string",
+            "description": "Blank working field for the supplier's controlled response."
+          },
+          {
+            "name": "evidence_reference",
+            "type": "string",
+            "description": "Evidence identifier or dated primary-source URL supporting the response."
+          },
+          {
+            "name": "source_date",
+            "type": "string",
+            "description": "Source or evidence date, normally in ISO 8601 calendar-date form."
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": "Current open or hold state of the decision field."
+          },
+          {
+            "name": "owner",
+            "type": "string",
+            "description": "Party responsible for resolving or coordinating the field."
+          },
+          {
+            "name": "next_action",
+            "type": "string",
+            "description": "Next evidence or decision action."
+          },
+          {
+            "name": "profile_id",
+            "type": "string",
+            "description": "Controlled buyer or supplier profile identifier."
+          },
+          {
+            "name": "tool_or_die_id",
+            "type": "string",
+            "description": "Controlled extrusion tool or die identifier."
+          },
+          {
+            "name": "finish_batch_id",
+            "type": "string",
+            "description": "Controlled pretreatment, coating, anodising, or other finish-batch identifier."
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Scope, acceptance, or professional-confirmation note."
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplier-document-requirements-list-template",
+      "type": "table",
+      "path": "https://github.com/vykut/landedspec-open-data/releases/download/v2026.07.19/supplier-document-requirements-list-template.csv",
+      "title": "Supplier Document Requirements List Template",
+      "description": "A 27-line supplier document requirements list (SDRL) with milestones, purposes, preparers, reviewers, formats, languages, review states, resubmissions, owners, and final-dossier controls.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "bytes": 11354,
+      "hash": "sha256:902b6d022126d396ce9312954548c8b709ce2cb1335d01ec437d040917316c2a",
+      "records": 27,
+      "sources": [
+        {
+          "title": "Supplier document requirements before deposit — authoritative landing page",
+          "path": "https://landedspec.com/blog/supplier-documents-before-deposit/",
+          "version": "2026-07-19"
+        }
+      ],
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "requirement_id"
+        ],
+        "fields": [
+          {
+            "name": "requirement_id",
+            "type": "string",
+            "description": "Stable SDRL requirement identifier."
+          },
+          {
+            "name": "requirement_status",
+            "type": "string",
+            "description": "Whether the example requirement still needs buyer confirmation."
+          },
+          {
+            "name": "document_or_data_requirement",
+            "type": "string",
+            "description": "Document, record, certificate, declaration, or data item requested."
+          },
+          {
+            "name": "product_or_line_scope",
+            "type": "string",
+            "description": "Product family, purchase line, shipment, or dossier scope."
+          },
+          {
+            "name": "due_milestone",
+            "type": "string",
+            "description": "Commercial or delivery milestone by which the item is due."
+          },
+          {
+            "name": "submission_purpose",
+            "type": "string",
+            "description": "Approval, review, information, shipment release, or professional-confirmation purpose."
+          },
+          {
+            "name": "supplier_preparer",
+            "type": "string",
+            "description": "Supplier-side role expected to prepare or coordinate the item."
+          },
+          {
+            "name": "buyer_reviewer",
+            "type": "string",
+            "description": "Buyer-side or responsible-professional review role."
+          },
+          {
+            "name": "required_format",
+            "type": "string",
+            "description": "Required document or data format."
+          },
+          {
+            "name": "required_language",
+            "type": "string",
+            "description": "Contract, market, or customs language requirement."
+          },
+          {
+            "name": "final_dossier_required",
+            "type": "string",
+            "description": "Whether the accepted item belongs in the final dossier."
+          },
+          {
+            "name": "supplier_document_id",
+            "type": "string",
+            "description": "Supplier-controlled document identifier or unresolved placeholder."
+          },
+          {
+            "name": "supplier_revision",
+            "type": "string",
+            "description": "Supplier-controlled revision or unresolved placeholder."
+          },
+          {
+            "name": "transmittal_date",
+            "type": "string",
+            "description": "Submission date or unresolved placeholder."
+          },
+          {
+            "name": "buyer_review_status",
+            "type": "string",
+            "description": "Buyer review outcome or unresolved placeholder."
+          },
+          {
+            "name": "next_resubmission_date",
+            "type": "string",
+            "description": "Next resubmission date or unresolved placeholder."
+          },
+          {
+            "name": "owner",
+            "type": "string",
+            "description": "Role responsible for the next action."
+          },
+          {
+            "name": "next_action",
+            "type": "string",
+            "description": "Next evidence, review, or coordination action."
+          },
+          {
+            "name": "boundary_note",
+            "type": "string",
+            "description": "Reminder to confirm applicability and responsible advice."
+          }
+        ]
+      }
+    },
+    {
+      "name": "fob-cif-dap-construction-quote-comparison",
+      "type": "table",
+      "path": "https://github.com/vykut/landedspec-open-data/releases/download/v2026.07.19/fob-cif-dap-construction-quote-comparison.csv",
+      "title": "FOB, CIF, and DAP Construction Quote Comparison",
+      "description": "A 40-line blank comparison register for reconciling quote inclusions, physical handoffs, risk transfer, import responsibilities, destination charges, evidence, confidence, and next actions across FOB, CIF, and DAP construction-material scopes.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "bytes": 2195,
+      "hash": "sha256:5da282518671cf5db8d422ff35001147510a8ac17a682b3749ab1a9550f73b25",
+      "records": 40,
+      "sources": [
+        {
+          "title": "FOB vs CIF vs DAP for construction materials — authoritative landing page",
+          "path": "https://landedspec.com/blog/compare-fob-cif-dap-construction-materials/",
+          "version": "2026-07-19"
+        }
+      ],
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "section",
+          "cost_or_scope_line"
+        ],
+        "fields": [
+          {
+            "name": "section",
+            "type": "string",
+            "description": "Product, commercial, transport, import, evidence, or decision grouping."
+          },
+          {
+            "name": "cost_or_scope_line",
+            "type": "string",
+            "description": "Cost, responsibility, handoff, evidence, or scope item to compare."
+          },
+          {
+            "name": "buyer_input",
+            "type": "string",
+            "description": "Blank working field for the buyer's controlled assumption or requirement."
+          },
+          {
+            "name": "supplier_fob",
+            "type": "string",
+            "description": "Blank working field for the supplier's FOB quote or scope response."
+          },
+          {
+            "name": "supplier_cif",
+            "type": "string",
+            "description": "Blank working field for the supplier's CIF quote or scope response."
+          },
+          {
+            "name": "supplier_dap",
+            "type": "string",
+            "description": "Blank working field for the supplier's DAP quote or scope response."
+          },
+          {
+            "name": "evidence_or_quote_source",
+            "type": "string",
+            "description": "Controlled quote, contract, carrier, customs, tax, insurance, or other evidence reference."
+          },
+          {
+            "name": "confidence",
+            "type": "string",
+            "description": "Working confidence or unresolved state for the compared line."
+          },
+          {
+            "name": "next_action",
+            "type": "string",
+            "description": "Next clarification, evidence, or professional-confirmation action."
+          }
+        ]
+      }
+    }
+  ]
+}
