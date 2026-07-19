@@ -35,6 +35,12 @@ The `v2026.07.19` repository state is [independently preserved by Software Herit
 
 This preservation record verifies an archived repository state. It does not represent an editorial endorsement, earned backlink, Google crawl, indexing, or ranking evidence.
 
+### DOI-ready dataset deposit
+
+The immutable [`v2026.07.19` release](https://github.com/vykut/landedspec-open-data/releases/tag/v2026.07.19) also publishes a complete [`landedspec-open-data-v2026.07.19.zip`](https://github.com/vykut/landedspec-open-data/releases/download/v2026.07.19/landedspec-open-data-v2026.07.19.zip) package and [`zenodo-metadata-v2026.07.19.json`](https://github.com/vykut/landedspec-open-data/releases/download/v2026.07.19/zenodo-metadata-v2026.07.19.json). The metadata uses Zenodo's `dataset` resource type, `cc-by-4.0` license identifier, the three authoritative LandedSpec landing pages, the immutable GitHub release, and the Software Heritage content identifier. It validates against Zenodo's published legacy deposit schema.
+
+This makes the frozen release ready for an authenticated Zenodo dataset deposit. It does not mean that a Zenodo record, reserved DOI, registered DataCite DOI, citation, or independent endorsement already exists. Until a DOI is published, cite the immutable GitHub release or Software Heritage identifier above.
+
 ## Corrections
 
 Open a GitHub issue with the dataset filename, row or field, current source, and proposed correction. Do not include supplier quotes, prices, personal data, contracts, invoices, or other confidential commercial information. You can also use the [LandedSpec corrections route](https://landedspec.com/methodology/#corrections).
