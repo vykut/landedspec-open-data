@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "publisher": "LandedSpec",
+  "publisher_url": "https://landedspec.com/",
+  "collection_url": "https://landedspec.com/methodology/#research-assets",
+  "repository_url": "https://github.com/vykut/landedspec-open-data",
+  "published_on": "2026-07-19",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_boundary": "The CC BY 4.0 grant covers LandedSpec-authored selection, calculations, labels, and explanatory notes. Underlying source data remains subject to the source provider's rights and terms.",
+  "datasets": [
+    {
+      "path": "datasets/aluminium-profile-tooling-finish-acceptance-register.csv",
+      "title": "Aluminium Profile Tooling and Finish Acceptance Register",
+      "records": 108,
+      "bytes": 22893,
+      "sha256": "bd020585ed76b35a5de7c1444c59188cf561958566f1cb0e61eb9376d86731df",
+      "authoritative_landing_page": "https://landedspec.com/import/powder-coated-aluminium-profiles-to-germany/",
+      "direct_distribution": "https://landedspec.com/resources/aluminium-profile-tooling-finish-acceptance-register.csv",
+      "query_context": "china profile pretreatment"
+    },
+    {
+      "path": "datasets/supplier-document-requirements-list-template.csv",
+      "title": "Supplier Document Requirements List Template",
+      "records": 27,
+      "bytes": 11354,
+      "sha256": "902b6d022126d396ce9312954548c8b709ce2cb1335d01ec437d040917316c2a",
+      "authoritative_landing_page": "https://landedspec.com/blog/supplier-documents-before-deposit/",
+      "direct_distribution": "https://landedspec.com/resources/supplier-document-requirements-list-template.csv",
+      "query_context": "supplier document requirements list"
+    },
+    {
+      "path": "datasets/fob-cif-dap-construction-quote-comparison.csv",
+      "title": "FOB, CIF, and DAP Construction Quote Comparison",
+      "records": 40,
+      "bytes": 2195,
+      "sha256": "5da282518671cf5db8d422ff35001147510a8ac17a682b3749ab1a9550f73b25",
+      "authoritative_landing_page": "https://landedspec.com/blog/compare-fob-cif-dap-construction-materials/",
+      "direct_distribution": "https://landedspec.com/resources/fob-cif-dap-construction-quote-comparison.csv",
+      "query_context": "cif and dap difference | dap and cif difference"
+    }
+  ],
+  "boundary": "This owned distribution can support discovery and citation but does not prove a Google crawl, index decision, exact-query impression, click, earned third-party link, or ranking change."
+}
