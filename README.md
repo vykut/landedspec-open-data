@@ -29,6 +29,12 @@ Underlying source data remains subject to its provider's rights and terms. See [
 
 For software and research tooling, `CITATION.cff` provides a machine-readable collection citation. For an individual dataset, cite the title and authoritative landing page listed above.
 
+### Independent preservation
+
+The `v2026.07.19` repository state is [independently preserved by Software Heritage](https://archive.softwareheritage.org/swh:1:dir:8f1e848ada6d2288e00acaf2f4d9f25a47d24a9a;origin=https://github.com/vykut/landedspec-open-data;visit=swh:1:snp:acfc238f04fea6af66e9b73fdefd7ab584495e9f;anchor=swh:1:rev:20198a57ae4e469152178fc20a84d00a9327ed61/) under the qualified persistent identifier `swh:1:dir:8f1e848ada6d2288e00acaf2f4d9f25a47d24a9a;origin=https://github.com/vykut/landedspec-open-data;visit=swh:1:snp:acfc238f04fea6af66e9b73fdefd7ab584495e9f;anchor=swh:1:rev:20198a57ae4e469152178fc20a84d00a9327ed61`. The archive snapshot also retains the release tag and Git revision and can generate a BibTeX citation from `CITATION.cff`.
+
+This preservation record verifies an archived repository state. It does not represent an editorial endorsement, earned backlink, Google crawl, indexing, or ranking evidence.
+
 ## Corrections
 
 Open a GitHub issue with the dataset filename, row or field, current source, and proposed correction. Do not include supplier quotes, prices, personal data, contracts, invoices, or other confidential commercial information. You can also use the [LandedSpec corrections route](https://landedspec.com/methodology/#corrections).
